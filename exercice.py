@@ -6,13 +6,19 @@ from typing import List
 
 
 def convert_to_absolute() -> float:
-    return 0.0
+    nombre=(float(input('entrer un nombre: ')))
+    if nombre<0:
+        nombre=-1*nombre
+    return nombre
 
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
+    liste=[]
+    for l in prefixes:
+        liste.append(l+suffixes)
 
-    return [""]
+    return liste
 
 
 def prime_integer_summation() -> int:
@@ -36,7 +42,7 @@ def main() -> None:
 
     number = 10
     print(f"La factiorelle du nombre {number} est: {factorial(number)}")
-    
+
     print(f"L'affichage de la boucle est:")
     use_continue()
 
