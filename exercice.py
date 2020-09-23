@@ -17,11 +17,12 @@ def use_prefixes() -> List[str]:
     liste=[]
     for l in prefixes:
         liste.append(l+suffixes)
-
     return liste
 
 
 def prime_integer_summation() -> int:
+
+
     return 0
 
 
@@ -30,7 +31,12 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    pass
+    nprime=range(1,11)
+    for n in nprime:
+        if n==5:
+            continue
+        print(n)
+
 
 
 def main() -> None:
