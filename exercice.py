@@ -22,7 +22,7 @@ def use_prefixes() -> List[str]:
 
 def prime_integer_summation() -> int:
     x=0
-    
+    y=7
 
     return 0
 
